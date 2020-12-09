@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  if data
+    h1 Redirect Halted
+    p Normally, this is where your browser would be redirected to the new URL.
+    p For now, here is the information about the redirect:
+    br
+    p ID: #{data.id}
+    p Internal URL: #{data.url}
+    p Redirects to: #{data.redirect}

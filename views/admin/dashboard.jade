@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    table
+        tr
+            th ID
+            th Destination
+            th URL
+        for url in urls
+            tr
+                td
+                    a(href="#{baseUrl}/admin/url/#{url.id}")=url.id
+                td=url.redirect
+                td=url.url
+
